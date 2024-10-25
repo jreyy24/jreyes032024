@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Julian Reyes - Portfolio</title>
+
+<style>
+    /* Mobile First Design */
+
+    :root
+    {
+        --color-primary: #634096;
+        --color-secondary: #BE418D;
+        --color-tertiary: #07B7F2;
+    }
+    html 
+    {
+        scroll-behavior: smooth;
+    }
+    body
+    {
+        
+    }
+    .container 
+    {    
+        min-height: 12rem;
+        max-width: 75rem;
+        padding: 1rem 3rem 1rem 3rem;
+        margin: auto;
+        position: relative;
+        border: 1px solid black;
+        opacity: 100%;
+        background-color: white;
+    }
+    #pageheader 
+    {
+        background-color: var(--color-primary);
+        min-height: 200px;
+        padding: 1rem;
+    }
+    #pageheader .container
+    {
+        background-color: #96622D;
+    }
+
+    #logo 
+    {
+        background-image: url(Images/logo.png);
+        background-size: contain;
+        background-color: none;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - 75px);
+        transition: all 2s;
+    }
+    #pagenav 
+        {
+            background-color: none;
+            min-height: 40px;
+            width: 300px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: absolute;
+            bottom: 0px;
+            left: calc(50% - 150px);
+            color: white;
+            opacity: 50%;
+
+/* left: calc(50% - 154px); */
+/* justify-content: space-around; */
+        }
+
+    #pagenav a
+        {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+    #pagenav a:hover
+        {
+            color: var(--color-secondary);
+        }
+    #media 
+        {
+            background-color: #974CA6;
+            min-height: 300px;
+            padding: 1rem;
+            color: black;
+        }
+    #media h1
+        {
+            text-align: center;
+            font-size: 3rem;
+        }
+    #media h2
+        {
+            text-align: center;
+            font-size: 2rem;
+        }
+    #media blockquote
+        {
+            background-color: none;
+            max-width: 50%;
+            margin: auto;
+        }
+    iframe
+        {
+            width: 80%;
+            aspect-ratio: 16/9;
+            margin: auto;
+            display: block;
+        }
+    #career 
+    {
+        background-color: var(--color-secondary);
+        min-height: 200px;
+        padding: 1rem;
+        opacity: 100%;
+    }
+    #pagecontent 
+    {
+        background-color: #07B7F2;
+        min-height: 200px;
+    padding: 1rem;
+    }
+    #semester1 
+    {
+        background-color: #D75856;
+        min-height: 200px;
+        padding: 1rem;
+    }
+    #semester2 
+    {
+        background-color: #A5A5A5;
+        min-height: 200px;
+        padding: 1rem;
+        display: none;
+    }
+    #pagefooter 
+    {
+        background-color: var(--color-tertiary);
+        min-height: 75px;
+        padding: 1rem;
+        text-align: center;
+    }
+    #pagefooter .container
+    {
+        height: 2rem;
+    }
+    #subfooter 
+    {
+        background-color: var(--color-primary);
+        min-height: 200px;
+        padding: 1rem;
+    }
+    .footerlinks
+    {
+        display: none;
+    }
+    #top
+    {
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        border: 1px solid black;
+        padding: 1rem;
+        text-align: center;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+
+/* a {
+padding: 1rem;
+} */
+
+/* Tablet and Desktop Styles */
+/* Use media queries to detect browser window size */
+
+@media screen and (min-width: 321px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+#logo {
+left: 25px;
+}
+#media {
+height: 450px;
+}
+#pagenav {
+top: 0px;
+right: 0px;
+left: auto;
+bottom: auto;
+}
+}
+@media screen and (min-width: 1200px) {
+
+#media {
+height: 600px;
+}
+}
+</style>
+</head>
+<body>
+    <!-- Named anchor to navigate to the top of the page -->
+    <a name="topanchor"></a>
+<!-- begin pageheader -->
+<header id="pageheader">
+<div class="container">
+<div id="logo"></div>
+<nav id="pagenav">
+<a href="#career">Career</a>
+|
+<a href="#semester1">Semester 1</a>
+|
+<a href="#semester2">Semester 2</a>
+</nav>
+</div>
+</header>
+<!-- end pageheader -->
+
+<!-- begin media -->
+<section id="media">
+    <h1>Julian Reyes</h1>
+    <h2>Portfolio</h2>
+    <blockquote>"Nobody can tell me where I can and can't go." - Kanye West</blockquote>
+    <div id="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6CHs4x2uqcQ?si=kFXfPvA1kVgno8TC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</section>
+<!-- end media -->
+
+<!-- begin career -->
+<section id="career">
+<div class="container">
+<a name="career"></a>
+<h2>Career</h2>
+<ul>
+    <li>Letter of Introduction</li>
+    <li>Resume</li>
+    <li>References</li>
+    <li>Job Application</li>
+    <li>Career Plan</li>
+    <li>Work Samples</li>
+    <li>Certificates</li>
+</ul>
+</div>
+</section>
+<!-- end career -->
+
+<!-- begin pagecontent -->
+<main id="pagecontent">
+<div class="container">
+    <h2>Introduction</h2>
+    <p>
+        My name is Julian Reyes and I am currently a junior that attends Coalinga High School. I'm a fan of numerous things such as video games, basketball, Star Wars, and MMA. My favorite subject would be coding but my second favorite would be history. My favorite music artists would probably be Kanye West, Kendrick Lamar, J. Cole, and Bruno Mars. My Web Page theme is based on Kanye's third album named Graduation and I chose this as the theme because it will be my third and final year coding.
+    </p>
+</div>
+</main>
+<!-- end pagecontent -->
+
+<!-- begin semester1 -->
+<section id="semester1">
+<div class="container">
+<a name="semester1"></a>
+<h2>Semester1</h2>
+<ul>
+    <li>A001</li>
+    <li>A002</li>
+    <li>A003</li>
+    <li>A004</li>
+    <li> <a target="_blank" href="Activities/CanvasSmileyFace/canvassmileyface.html">Canvas Smiley Face</a></li>
+</ul>
+</div>
+</section>
+<!-- end semester1 -->
+
+<!-- begin semester2 -->
+<section id="semester2">
+<div class="container">
+<a name="semester2"></a>
+<h2>Semester2</h2>
+<ul>
+    <li>A001</li>
+    <li>A002</li>
+    <li>A003</li>
+    <li>A004</li>
+</ul>
+</div>
+</section>
+<!-- end semester2 -->
+
+<!-- begin pagefooter -->
+<footer id="pagefooter">
+<div class="container">
+<a>chago</a> | <a>color schemes</a> |
+<a href="https://coalingahuron.aeries.net/&quot; target="new">aeries</a> |
+<a>chs</a> | <a>mycareertech</a> | <a>classroom</a> | <a>codepip</a> |
+<a>minga</a>
+</div>
+</footer>
+<!-- end pagefooter -->
+
+<!-- begin subfooter -->
+<footer id="subfooter">
+<div class="container">
+    <h2>PageFooter</h2>
+    <div id="quote">
+        <h3>Final Thoughts</h3>
+        <blockquote>
+            "Havin' money's not everythin', not havin' it is"
+        </blockquote>
+        <p>
+            - Kanye West
+        </p>
+    </div>
+
+    <div id="footerlinks">
+        <h3>Links</h3>
+        <ul>
+            <li>Career</li>
+            <li>Semester1</li>
+            <!-- <li>Semester2</li> -->
+        </ul>
+    </div>
+</div>
+</footer>
+<!-- end subfooter -->
+<div id="top">
+    <a href="#topanchor">Top</a>
+</div>
+</body>
+</html>
