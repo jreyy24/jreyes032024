@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing 2</title>
+</head>
+<body>
+    <h1>Canvas Drawing 2</h1>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        const canvas = window.document.querySelector('#canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = 800;
+        canvas.height = 800;
+
+        canvas.style.border = "2px solid black";
+        canvas.style.margin = 'auto';
+        canvas.style.display = 'block';
+
+        // Top of helmet
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.arc(400, 250, 200, 3.14, Math.PI * 2);
+        ctx.stroke();
+
+        // Tip of helmet
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'silver';
+        ctx.beginPath();
+        ctx.fillRect(380, 10, 35, 100);
+        ctx.stroke();
+        // Details 1
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'grey'
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(210, 190);
+        ctx.lineTo(235, 200);
+        ctx.lineTo(235, 243);
+        ctx.lineTo(200, 243);
+        ctx.fill();
+        ctx.stroke();
+
+        // Details 2
+        ctx.strokeStyle = 'black';
+        ctx.fillStyle = 'grey';
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(590, 190);
+        ctx.lineTo(565, 200);
+        ctx.lineTo(565, 243);
+        ctx.lineTo(600, 243);
+        ctx.fill();
+        ctx.stroke();
+
+        
+        // Above visor
+        ctx.strokeStyle = 'black';
+        ctx.lineWidth = 15;
+        ctx.lineCap = "round";
+        ctx.beginPath();
+        ctx.moveTo(190, 250)
+        ctx.lineTo(610, 250)
+        ctx.stroke();
+
+        // Visor
+        ctx.fillStyle = 'black';
+        ctx.lineCap = "round";
+        ctx.beginPath();
+        
+    </script>
+</body>
+</html>

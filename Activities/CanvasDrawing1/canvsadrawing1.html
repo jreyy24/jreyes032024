@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing 1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #canvas {
+        margin: auto;
+        display: block;
+        border: 1px solid silver;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Canvas Drawing</h1>
+    <canvas id="canvas" width="1000px" height="500px"></canvas>
+
+    <script>
+      // Create variables
+      const canvas = window.document.querySelector('#canvas');
+      const ctx = canvas.getContext('2d');
+
+      // top of popsicle
+      ctx.strokeStyle = "pink";
+      ctx.fillStyle = "pink";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(500, 100, 75, 3.14, Math.PI * 2);
+      ctx.stroke();
+      ctx.fill();
+
+      // middle of popsicle
+      ctx.fillStyle = "pink";
+      ctx.lineWidth = 1;
+      ctx.fillRect(425, 100, 150, 200);
+
+      // popsicle stick
+      ctx.fillStyle = "tan"
+      ctx.lineWidth = 1;
+      ctx.fillRect(475, 300, 50, 130);
+
+      // bottom of popsicle stick
+      ctx.fillStyle = "tan";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(500, 430, 24.5, 0, Math.PI);
+      ctx.stroke();
+      ctx.fill();
+    </script>
+  </body>
+</html>
