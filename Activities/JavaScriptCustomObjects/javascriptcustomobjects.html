@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Objects</title>
+</head>
+<body>
+    <h1>Custom Objects</h1>
+
+    <script>
+        const ROBOT =
+        {
+            name: 'Liberty Prime',
+            height: '40 Feet',
+            weight: '40 Tons',
+            reactor: 'Online',
+            voice: 'Functioning',
+            weapons: 'Armed',
+            image: '<img src="Images/prime.jpeg">',
+            attack: function(){return 'Bombs Away!'},
+            salute: function(){return 'Honoring the fallen'},
+        }
+
+        window.document.write(ROBOT.name +'<br>');
+        window.document.write(ROBOT.reactor +'<br>');
+        window.document.write(ROBOT.voice +'<br>');
+        window.document.write(ROBOT.weapons +'<br>');
+        window.document.write(ROBOT.image +'<br>');
+        
+    </script>
+</body>
+</html>

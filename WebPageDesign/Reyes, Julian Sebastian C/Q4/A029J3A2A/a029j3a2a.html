@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A029J3A2A</title>
+<style>
+body
+{
+    background-color: steelblue;
+}
+h1, h2
+{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+#rotator
+{
+    height: 10rem;
+    width: 10rem;
+    background-color: red;
+    border: 1px solid white;
+    margin-left: 5rem;
+    animation-name:rotate ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes rotate
+{
+    from{margin-left:0;
+    background-color: lime;
+transform: rotate(0deg);}
+    to{margin-left: 20rem;
+    background-color: red;
+transform: rotate(1000deg);}
+} 
+#jump
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: blue;
+    animation-name: jump;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes jump
+{
+    from{}
+    to{transform: translate(0px, -80px);}
+}
+#fall
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: green;
+    animation-name: fall;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes fall
+{
+    from{}
+    to{transform: translate(0px, 80px);}
+}
+#scale
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: pink;
+    animation-name: scale;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes scale
+{
+    from{}
+    to{transform: scale(50%);}
+}
+#translate
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: brown;
+    animation-name: translate;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes translate
+{
+    from{}
+    to{transform: translate(500px, -100px);}
+}
+#height
+{
+    width: 10rem;
+    height: 10rem;
+    background-color: turquoise;
+    animation-name: height;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-bottom: -2000px;
+}
+@keyframes height
+{
+    from{height:300px;}
+    to{height:500px;}
+}
+</style>
+
+</head>
+<body>
+    <h1>A029J3A2A</h1>
+    <h2>KeyFrames From To</h2>
+
+
+    <div id="rotator"></div>
+    <div id="jump"></div>
+    <div id="fall"></div>
+    <div id="scale"></div>
+    <div id="translate"></div>
+    <div id="height"></div>
+</body>
+</html>
