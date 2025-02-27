@@ -4,6 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GridAreasOnYourOwn2</title>
+    <style>
+        body
+        {
+            background-color: yellow;
+        }
+        #container
+        {
+            border: 50px solid purple;
+            background-color: purple;
+            max-width: 1200px;
+            width: 80%;
+            margin: auto;
+        }
+        #wrapper
+        {
+            background-color: navy;
+            margin: auto;
+            gap: 10px;
+        }
+        header
+        {
+            background-color: orange;
+            min-height: 250px;
+            grid-area: hea;
+        }
+        nav
+        {
+            background-color: aqua;
+            min-height: 500px;
+            grid-area: nav;
+        }
+        #intromedia
+        {
+            background-color: lime;
+            min-height: 475px;
+            grid-area: med;
+        }
+        main
+        {
+            background-color: white;
+            min-height: 300px;
+            grid-area: mai;
+        }
+        #card001
+        {
+            background-color: coral;
+            min-height: 220px;
+            grid-area: c01;
+        }
+        #card002
+        {
+            background-color: lightblue;
+            min-height: 220px;
+            grid-area: c02;
+        }
+        #pagefooter
+        {
+            background-color: gold;
+            min-height: 100px;
+            grid-area: foo;
+        }
+        #pagedetails
+        {
+            background-color: silver;
+            min-height: 475px;
+            grid-area: det;
+        }
+
+        @media screen and (min-width:768px)
+        {
+            #wrapper
+            {
+                display: grid;
+                gap: 10px;
+                grid-template-areas: 
+                "hea hea hea"
+                "med med med"
+                "nav mai mai"
+                "nav c01 c02"
+                "foo foo foo"
+                "det det det"
+                ;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="container">
