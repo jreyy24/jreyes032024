@@ -1,0 +1,235 @@
+
+:root
+{
+    --color-primary: #634096;
+    --color-secondary: #BE418D;
+    --color-tertiary: #07B7F2;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-image: url(Images/tcdcover.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container 
+{    
+    min-height: 12rem;
+    max-width: 75rem;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: auto;
+    position: relative;
+    border: 1px solid black;
+    opacity: 100%;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+#pageheader 
+{
+    background-color: var(--color-primary);
+    min-height: 200px;
+    padding: 1rem;
+}
+#pageheader .container
+{
+    background-color: #96622D;
+    border-radius: 1.5rem;
+}
+
+#logo 
+{
+    background-image: url(Images/logo.png);
+    background-size: contain;
+    background-color: none;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 75px);
+    transition: all 2s;
+}
+#pagenav 
+    {
+        background-color: none;
+        min-height: 40px;
+        width: 300px;
+        padding: 1rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        left: calc(50% - 150px);
+        color: white;
+        opacity: 50%;
+
+/* left: calc(50% - 154px); */
+/* justify-content: space-around; */
+    }
+
+#pagenav a
+    {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+#pagenav a:hover
+    {
+        color: #07B7F2;
+    }
+#topnav 
+{
+    background-color: var(--color-tertiary);
+    min-height: 30px;
+    padding: 1rem;
+    text-align: center;
+}
+#topnav a
+{
+    color: #BE418D;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#topnav .container
+{
+    min-height: 2rem;
+}
+#media 
+    {
+        background-color: #974CA6;
+        min-height: 300px;
+        padding: 1rem;
+        color: black;
+    }
+#media h1
+    {
+        text-align: center;
+        font-size: 3rem;
+    }
+#media h2
+    {
+        text-align: center;
+        font-size: 2rem;
+    }
+#media blockquote
+    {
+        background-color: none;
+        max-width: 50%;
+        margin: auto;
+    }
+iframe
+    {
+        width: 80%;
+        aspect-ratio: 16/9;
+        margin: auto;
+        display: block;
+    }
+#career 
+{
+    background-color: var(--color-secondary);
+    min-height: 200px;
+    padding: 1rem;
+    opacity: 100%;
+}
+#pagecontent 
+{
+    background-color: #07B7F2;
+    min-height: 200px;
+    padding: 1rem;
+}
+#semester1 
+{
+    background-color: #D75856;
+    min-height: 200px;
+    padding: 1rem;
+}
+#semester2 
+{
+    background-color: #A5A5A5;
+    min-height: 200px;
+    padding: 1rem;
+}
+#pagefooter 
+{
+    background-color: var(--color-tertiary);
+    min-height: 75px;
+    padding: 1rem;
+    text-align: center;
+}
+#pagefooter .container
+{
+    height: 2rem;
+}
+#subfooter 
+{
+    background-color: var(--color-primary);
+    min-height: 200px;
+    padding: 1rem;
+}
+.footerlinks
+{
+    display: none;
+}
+#top
+{
+    width: 25px;
+    height: 25px;
+    background-color: none;
+    border: 1px solid black;
+    color: none;
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-image: url(Images/kanyebear.jpg);
+    background-size: cover;
+    background-attachment:none;
+    text-decoration: none;
+}
+
+/* a {
+padding: 1rem;
+} */
+
+/* Tablet and Desktop Styles */
+/* Use media queries to detect browser window size */
+
+@media screen and (min-width: 321px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+#logo {
+left: 25px;
+}
+#media {
+height: 450px;
+}
+#pagenav {
+top: 0px;
+right: 0px;
+left: auto;
+bottom: auto;
+}
+}
+@media screen and (min-width: 1200px) {
+
+#media {
+height: 600px;
+}
+}
