@@ -11,7 +11,7 @@ html
 }
 body
 {
-    background-image: url(Images/tcdcover.jpeg);
+    background-image: url(none);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -139,6 +139,7 @@ iframe
 #pagecontent 
 {
     background-color: #07B7F2;
+    line-height: 1.5;
     min-height: 200px;
     padding: 1rem;
 }
