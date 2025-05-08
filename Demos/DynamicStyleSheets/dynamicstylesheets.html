@@ -37,7 +37,23 @@
         function updateStylesheet()
         {
             styleLink.href = selStylesheet.value; // Update the href attribute of the link element
+
+            // save to local storage
+            localStorage.setItem('selectedStylesheet1938', selStylesheet.value);
         }
+
+        window.addEventListener('load', function()
+        {
+            let savedStylesheet = localStorage.getItem('selectedStylesheet1938');
+
+            if(savedStylesheet !== null)
+            {
+                // Link to the saved stylesheet
+                styleLink.href = savedStylesheet;
+                // Match the dropbox box (select) to saved stylesheet
+                selStylesheet.value = savedStylesheet;
+            }
+        });
 
     </script>
 </body>
