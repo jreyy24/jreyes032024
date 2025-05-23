@@ -5,6 +5,22 @@
     --color-secondary: #BE418D;
     --color-tertiary: #07B7F2;
 }
+/* Reset Browser */
+/* *, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/* Fix Browser Bounce */
+body
+{
+    overflow-x: auto;
+    width: 100%;
+    overscroll-behavior: none;
+}
 html 
 {
     scroll-behavior: smooth;
